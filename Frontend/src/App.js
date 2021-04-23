@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+require('dotenv').config({path: __dirname + '/.env'})
 import './App.css';
 
 function App() {
