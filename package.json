@@ -1,7 +1,6 @@
 {
   "name": "ecommerce-site",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node Backend/server.js",
@@ -13,13 +12,26 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bootstrap": "^4.6.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.5",
-    "node": "^16.0.0"
+    "node": "^16.0.0",
+    "react-bootstrap": "^1.5.2",
+    "react-icons": "^4.2.0",
+    "react-script": "^2.0.5"
   },
   "devDependencies": {
     "concurrently": "^6.0.2",
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dan-Mobbs/React-Mern-eCommerce-Website-.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dan-Mobbs/React-Mern-eCommerce-Website-/issues"
+  },
+  "homepage": "https://github.com/Dan-Mobbs/React-Mern-eCommerce-Website-#readme",
+  "description": ""
 }

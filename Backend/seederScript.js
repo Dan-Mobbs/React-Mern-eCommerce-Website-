@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-const productsData = require("./data/Products");
+const productsData = require("./data/products");
 const connectDB = require("./config/db");
 const Product = require("./models/Product");
 
@@ -15,10 +15,10 @@ const importData = async () => {
         console.log("Data Import Success");
 
         process.exit();
-    }catch(error) {
-        console.log("Error with Data import");
+    } catch(error) {
+        console.error("Error with Data import");
         process.exit(1);
     }  
-}
+};
 
 importData();

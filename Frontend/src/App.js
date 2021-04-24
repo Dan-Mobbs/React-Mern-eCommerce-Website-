@@ -1,9 +1,28 @@
-require('dotenv').config({path: __dirname + '/.env'})
 import './App.css';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+
+//Screens
+import HomeScreen from './components/screens/HomeScreen/HomeScreen';
+import ProductScreen from './components/screens/ProductScreen/ProductScreen';
+import CartScreen from './components/screens/CartScreen/CartScreen';
+import Navbar from './components/Nav/Navbar';
 
 function App() {
   return (
-    <h1>hello there world !</h1>
+    <>
+      <Router>
+        <Navbar />
+          {/* SiderDrawer */}
+          {/* Backdrop */}
+        <main>
+          <Switch>
+            <Route exact path="/" component={HomeScreen} />
+            <Route exact path="/product/:id" component={ProductScreen} />
+            <Route exact path="/cart" component={CartScreen} />
+          </Switch> 
+        </main>  
+      </Router>
+    </>
   );
 }
 
