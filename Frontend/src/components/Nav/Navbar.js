@@ -9,13 +9,15 @@ const navbar = () => {
         <>
         <ReactBootStrap.Navbar collapseOnSelect expand="lg" bg="light" variant="light">
             <ReactBootStrap.Navbar.Brand inline>
-                <img
-                    alt="logo"
-                    src={Logo}
-                    width="150"
-                    height="100"
-                    className="d-inline-block align-top"
-                />
+                <Link to="/">
+                    <img
+                        alt="logo"
+                        src={Logo}
+                        width="150"
+                        height="100"
+                        className="d-inline-block align-top"
+                    />
+                </Link>    
             </ReactBootStrap.Navbar.Brand>
             <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav justify-content-end">
